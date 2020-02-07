@@ -1,0 +1,115 @@
+@media screen and (max-width:900px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,30%);
+  }
+  .contenido2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,30%);
+    grid-gap: 20px;
+    grid-column: span 3;
+
+  }
+  .contenido2 .cabecera-listado{
+    grid-column: span 2;
+  }
+  .contenido2 .tags{
+    grid-column: span 1;
+  }
+.contenido2 .noticias-destacadas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2px;
+  grid-column: span 3;
+}
+.noticias-destacadas .item{
+  grid-column: span 1;
+}
+
+}
+
+@media screen and (max-width:600px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,30%);
+     grid-gap:5px;
+  }
+  nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .contenido1{
+    grid-column: span 2;
+    grid-row: span 1;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f2f4f5;
+
+  }
+
+  .contenido1 .noticia{
+    grid-row: span 1;
+    grid-column: span 2;
+
+  }
+  .contenido2{
+
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(4,20%);
+      grid-column: span 2;
+      grid-row: span 1;
+
+    }
+    .contenido2 .cabecera-listado{
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .contenido2 .tags{
+      grid-column: span 1;
+    }
+    .contenido2 .noticias-destacadas{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(3,1fr);
+      grid-gap: 2px;
+      grid-column: span 2;
+
+    }
+
+
+    .noticias-destacadas #item1{
+      grid-column: span 1;
+      grid-row: span 1;
+
+    }
+    .noticias-destacadas #item2{
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .noticias-destacadas #item3{
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .contenido3{
+      grid-column: span 2;
+      grid-row: span 1;
+      display: grid;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-columns: repeat(2,1fr);
+      background-color: #f2f4f5;
+
+    }
+
+    .contenido3 .noticia{
+      grid-row: span 1;
+      grid-column: span 2;
+
+    }
+  }

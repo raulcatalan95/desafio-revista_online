@@ -1,0 +1,15 @@
+nav .menu{
+  text-align: right;
+}
+.logo h2{
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+nav{
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
